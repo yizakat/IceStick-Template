@@ -54,7 +54,7 @@ VCD			=	gtkwave
 
 # Sources
 
-SRCS        =	$(SRC)/hdl/top.sv $(SRC)/hdl/pll.sv
+SRCS        =	$(SRC)/hdl/top.sv $(SRC)/hdl/mod_pll.sv
 SRCS_TB		=	$(SRC)/tb/top_tb.sv
 
 				
