@@ -1,0 +1,120 @@
+## IceStick PCF (full)
+
+# -------------------------- SYSTEM CLOCK ------------------------------------
+set_io --warn-no-port i_clk 21
+
+
+# ------------ Red leds ------------------------------------------------------
+set_io --warn-no-port o_led_T 99
+set_io --warn-no-port o_led_R 98
+set_io --warn-no-port o_led_B 97
+set_io --warn-no-port o_led_L 96
+
+# ------------ Green led -----------------------------------------------------
+set_io --warn-no-port o_led_G 95
+
+# ------------ PMOD connector ------------------------------------------------
+#
+#   Pmod standard numeration (Oriented according the icestick, with the
+#               usb connector pointing to the left and IRda to the right)
+#
+#      --------
+#     |  12  6 |
+#     |  11  5 |
+#     |  10  4 |
+#     |  9   3 |
+#     |  8   2 |
+#     |  7   1 | <
+#      --------
+#
+#   FPGA pins:
+#
+#     ----------
+#    | 3V3  3V3 |
+#    | GND  GND |
+#    | 91    81 |
+#    | 90    80 |
+#    | 88    79 |
+#    | 87    78 | <
+#     ----------
+#
+#set_io --warn-no-port b_pmod_1 78
+#set_io --warn-no-port b_pmod_2 79
+#set_io --warn-no-port b_pmod_3 80
+#set_io --warn-no-port b_pmod_4 81
+#set_io --warn-no-port o_pmod_7 87
+#set_io --warn-no-port o_pmod_8 88
+#set_io --warn-no-port o_pmod_9 90
+#set_io --warn-no-port o_pmod_10 91
+
+# ------------------------ EXPANSION I/O ------------------------------------
+#
+# -- Numeration
+#
+#  Top Row (TR):
+#                                       v
+#          --------------------------------
+#         |  10  9  8  7  6  5 4  3  2  1  |
+#          --------------------------------
+#
+#  Bottom Row (BR):
+#
+#                                       v
+#          --------------------------------
+#         |  10  9  8  7  6  5 4  3  2  1  |
+#          --------------------------------
+#
+# --- FPGA pins
+#
+#  Top Row (TR)
+#                                                       v
+#        --------------------------------------------------
+#       | 119  118  117  116  115  114  113  112  GND  3v3 |
+#        --------------------------------------------------
+#
+#
+#  Bottom Row (BR)
+#
+#                                                       v
+#         -------------------------------------------------
+#        | 44   45   47   48   56   60   61   62  GND  3v3 |
+#         -------------------------------------------------
+#
+# -- Top Row
+#set_io --warn-no-port b_top_3 112
+#set_io --warn-no-port b_top_4 113
+#set_io --warn-no-port b_top_5 114
+#set_io --warn-no-port b_top_6 115
+#set_io --warn-no-port b_top_7 116
+#set_io --warn-no-port b_top_8 117
+#set_io --warn-no-port b_top_9 118
+#set_io --warn-no-port b_top_10 119
+#
+# -- Bottom Row
+#set_io --warn-no-port b_lower_3 62
+#set_io --warn-no-port b_lower_4 61
+#set_io --warn-no-port b_lower_5 60
+#set_io --warn-no-port b_lower_6 56
+#set_io --warn-no-port b_lower_7 48
+#set_io --warn-no-port b_lower_8 47
+#set_io --warn-no-port b_lower_9 45
+#set_io --warn-no-port b_lower_10 44
+
+
+# -------------------------- FTDI --------------------------------------------
+# --- FTDI 0:
+#set_io --warn-no-port RES  66
+#set_io --warn-no-port DONE 65
+#set_io --warn-no-port SS   71
+#set_io --warn-no-port MISO 67
+#set_io --warn-no-port MOSI 68
+#set_io --warn-no-port SCK  70
+#
+# --- FTDI 1: (Serial port)
+#set_io --warn-no-port DCD 1
+#set_io --warn-no-port DSR 2
+#set_io --warn-no-port DTR 3
+#set_io --warn-no-port CTS 4
+#set_io --warn-no-port RTS 7
+#set_io --warn-no-port TX  8
+#set_io --warn-no-port i_uart_RX  9
