@@ -1,5 +1,5 @@
 # IceStick Template
-Template project and makefile for building systemverilog hardware designs for the Lattice IceStick development board using an open-source tool chain on Linux.
+Template project and makefile for building systemverilog hardware designs for the [Lattice IceStick](https://www.latticesemi.com/icestick) development board using an open-source tool chain on Linux.
 
 The template implements a typical Blinky project with a 100Mhz PLL generated clock divided down and used to blink the green LED.
 
