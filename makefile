@@ -1,8 +1,9 @@
 # Yosys makefile for ICE40 projects 
 #
 # Requires: yosys, icestorm, iverilog and nextpnr to be installed correctly.
+# YizAKat 2023
 
-PROJECT		=	project
+PROJECT		=	IceStick_I2S
 
 # Configuration
 DEVICE		=	hx1k
@@ -54,7 +55,7 @@ VCD			=	gtkwave
 
 # Sources
 
-SRCS        =	$(SRC)/hdl/top.sv $(SRC)/hdl/mod_pll.sv
+SRCS        =	$(SRC)/hdl/top.sv $(SRC)/hdl/mod_pll.sv $(SRC)/hdl/mod_i2s_tx.sv $(SRC)/hdl/mod_clock_divider.sv
 SRCS_TB		=	$(SRC)/tb/top_tb.sv
 
 				
