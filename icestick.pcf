@@ -1,7 +1,7 @@
 ## IceStick PCF (full)
 
 # -------------------------- SYSTEM CLOCK ------------------------------------
-set_io --warn-no-port i_clk_12mhz 21
+set_io --warn-no-port i_clk 21
 
 
 # ------------ Red leds ------------------------------------------------------
@@ -86,9 +86,9 @@ set_io --warn-no-port o_led_G 95
 #set_io --warn-no-port b_top_5 114
 #set_io --warn-no-port b_top_6 115
 #set_io --warn-no-port b_top_7 116
-set_io --warn-no-port o_top_8 117
-set_io --warn-no-port o_top_9 118
-set_io --warn-no-port o_top_10 119
+#set_io --warn-no-port b_top_8 117
+#set_io --warn-no-port b_top_9 118
+#set_io --warn-no-port b_top_10 119
 #
 # -- Bottom Row
 #set_io --warn-no-port b_lower_3 62

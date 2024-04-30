@@ -1,11 +1,9 @@
-# IceStick I2S Audio Template
-This is a simple template for generating an I2S audio signal from the IceStick (Lattice ICE40 FPGA)
+# IceStick Template
+Template project and makefile for building systemverilog hardware designs for the [Lattice IceStick](https://www.latticesemi.com/icestick) development board using an open-source tool chain on Linux.
 
-The I2S transmitter is tested against a Digilent I2S2 PMOD (Cirrus CS4344 DAC).  This DAC requires
-no additional configuration.
+The template implements a typical Blinky project with a 100Mhz PLL generated clock divided down and used to blink the green LED.
 
-The test signal is a sine-wave stored in ROM, this has 100 samples and, with I2S running
-at 44100kHz, should produce a 441Hz note.  
+If all is well with your installation (toolchain) then this should work without problems out of the box.
 
 ## Toolchain
 
