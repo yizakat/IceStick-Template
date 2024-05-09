@@ -2,7 +2,8 @@
     "recommendations": [
         "dalance.svls-vscode",
         "mshr-h.veriloghdl",
-        "ms-vscode.makefile-tools"
+        "bmpenuelas.waveform-render",
+        "bbenoist.doxygen"
     ]
 }
   
